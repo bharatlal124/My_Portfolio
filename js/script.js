@@ -66,10 +66,10 @@ function sendEmail() {
                       Message: ${mess.value}`;
 
   Email.send({
-    SecureToken: "f5a8f6da-8daa-452c-99f9-5f6e2970878e",
-    // Host: "smtp.elasticemail.com",
-    // Username: "bharatlalsohna@gmail.com",
-    // Password: "388DF243F2F94D99A51D8449CD87FA5FDFBE",
+    // SecureToken: "f5a8f6da-8daa-452c-99f9-5f6e2970878e",
+    Host: "smtp.elasticemail.com",
+    Username: "bharatlalsohna@gmail.com",
+    Password: "388DF243F2F94D99A51D8449CD87FA5FDFBE",
     To: "bharatlalsohna@gmail.com",
     From: "bharatlalsohna@gmail.com",
     Subject: subject.value,
