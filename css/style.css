@@ -624,25 +624,24 @@ span {
 
 /* Portfolio Section Style */
 
-.portfolio{
+.portfolio {
   background: var(--bg-color);
-
 }
 
-.portfolio h2{
+.portfolio h2 {
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.portfolio-container{
+.portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box{
+.portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
@@ -650,17 +649,17 @@ span {
   display: flex;
 }
 
-.portfolio-box img{
+.portfolio-box img {
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0.7;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
   transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer{
+.portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -674,24 +673,23 @@ span {
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
 
-.portfolio-layer h4{
-  font-size:3rem;
-
+.portfolio-layer h4 {
+  font-size: 3rem;
 }
 
-.portfolio-layer p{
+.portfolio-layer p {
   font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
 
-.portfolio-layer a{
+.portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -701,11 +699,51 @@ span {
   border-radius: 50%;
 }
 
-.portfolio-layer i{
+.portfolio-layer i {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
 
+/*  */
+.portfolio-layer {
+  display: flex; /* Align the child elements side by side */
+  justify-content: space-between; /* Space out the links */
+  gap: 1rem; /* Add space between the links */
+  margin-top: 1rem; /* Adds spacing from the text above */
+  width: 100%; /* Ensure full width for alignment */
+}
+
+.portfolio-layer .links {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-layer .live-url,
+.portfolio-layer .git_url {
+  display: inline-flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color); /* Background color for the links */
+  border-radius: 50%; /* Makes the links circular */
+}
+
+.portfolio-layer .live-url a,
+.portfolio-layer .git_url a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Matches the parent size */
+  height: 100%;
+  text-decoration: none; /* Removes underline */
+}
+
+.portfolio-layer .live-url i,
+.portfolio-layer .git_url i {
+  font-size: 2rem;
+  color: var(--second-bg-color); /* Icon color */
+}
 
 /* Contact Section Style */
 
