@@ -707,7 +707,10 @@ span {
 }
 
 
-
+.portfolio-links {
+  display: flex;
+  gap: 1rem; /* Adds spacing between the icons */
+}
 
 
 
@@ -917,10 +920,10 @@ section:nth-child(odd) .animate.scroll,
   width: 0;
 }
 
-.portfolio-layer a{
+/* .portfolio-layer a{
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
