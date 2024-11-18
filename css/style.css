@@ -716,6 +716,7 @@ span {
 .portfolio-layer .links {
   display: flex;
   flex-direction: row;
+  gap:2rem;
 }
 .portfolio-layer .live-url,
 .portfolio-layer .git_url {
